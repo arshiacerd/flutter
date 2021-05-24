@@ -10,9 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-      body: Text("Arshia\n ayanshah3001@gmail.com")
-      )
-     
+        body: Text("Aqsa")),
     );
   }
-} 
+}
