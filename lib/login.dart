@@ -1,25 +1,26 @@
+import 'package:arshia/WelcomeLogin.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       appBar: AppBar(backgroundColor:Colors.deepOrange,
       title:Center(child: new Text("Welcome to Login Page"),) ,
       
       
       ),
-      
+    
       body: Center(
-        
+      
         child: Column(
         mainAxisAlignment:MainAxisAlignment.start,
-
           children: [
             SizedBox(height:20),
           
           Container( 
-            
+
             width: 200,
             
             child:TextField(
@@ -47,7 +48,9 @@ class LoginPage extends StatelessWidget {
       
       child: ElevatedButton.icon(
         
-        onPressed: (){},
+        onPressed: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context)=>Welcome()));
+        },
       icon: Icon( Icons.lock),
       label: Text("Login"),
       
